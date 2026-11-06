@@ -39,7 +39,7 @@
 	}
 	button:active { transform: scale(.95); }
 	button:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
-	/* Transparent canvas laid over everything; clicks pass through */
+
 	#confetti {
 		position: fixed; inset: 0; width: 100%; height: 100%;
 		background: transparent; pointer-events: none; z-index: 10;
@@ -80,6 +80,7 @@
 
 <script>
 (function () {
+// Dis da confetti magic!!!
 	var canvas = document.getElementById('confetti');
 	var ctx = canvas.getContext('2d');
 	var dpr = Math.min(window.devicePixelRatio || 1, 2);
